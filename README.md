@@ -22,9 +22,9 @@ Import the SQL file in the "dbstuff" directory
 
 ### Project Directory Structure
 
-├── node-mqsql-crud-app (main directory)   
-    ├── node_modules
-    ├── public
+> ├── node-mqsql-crud-app (main directory)   
+>    ├── node_modules
+>    ├── public
         ├── assets 
             ├── img
     ├── routes
