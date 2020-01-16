@@ -1,6 +1,6 @@
-##Sample "NodeJS Express Application with MySQL Backend"
+## Sample "NodeJS Express Application with MySQL Backend"
 
-###App Server Configuration:
+### App Server Configuration:
 
 Create an Ubuntu 18.04.3 LTS Server
 
@@ -9,7 +9,7 @@ Update and Upgrade it
 Install NodeJS:  sudo apt install nodejs
 Install NPM Node Package Manager:   sudo apt install npm
 
-###Database Server Configuration
+### Database Server Configuration
 
 Create an Ubuntu 18.04.3 LTS Server
 
@@ -20,7 +20,7 @@ Install the MariaDB per instructions on Canvas
 Import the SQL file in the "dbstuff" directory
 
 
-###Project Directory Structure
+### Project Directory Structure
 
 ├── node-mqsql-crud-app (main directory)   
     ├── node_modules
@@ -38,7 +38,7 @@ Import the SQL file in the "dbstuff" directory
         ├── edit-player.ejs
     ├── app.js  
 
-###Instructions:
+### App Setup Instructions:
 
 Login to the server. Verify you are in your home directory: cd ~
 
@@ -52,6 +52,6 @@ npm install express express-fileupload body-parser mysql ejs req-flash --save
 
 npm install nodemon -g
 
-###App Startup Instructions:
+### App Startup Instructions:
 
 nodemon app.js
