@@ -1,5 +1,13 @@
 ## Sample "NodeJS Express Application with MySQL Backend"
 
+Built using examples found online.
+
+NodeJS web application using the "Express Framework".  Code is written in JavaScript
+
+Understanding how frameworks like these work is easier when you first understand how PHP works.
+
+This app also uses an interesting form of Cascading Style Sheets.  This will be explained in class.
+
 ### App Server Configuration:
 
 Create an Ubuntu 18.04.3 LTS Server
