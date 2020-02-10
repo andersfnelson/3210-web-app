@@ -1,6 +1,6 @@
 module.exports = {
     getHomePage: (req, res) => {
-        let query = "SELECT * FROM `players` ORDER BY id ASC"; // query database to get all the players
+        let query = "SELECT * FROM `songs` ORDER BY songName ASC"; // query database to get all the songs
 
         // execute query
         db.query(query, (err, result) => {
@@ -8,7 +8,7 @@ module.exports = {
                 res.redirect('/');
             }
             res.render('index.ejs', {
-                title: "Welcome to Soccer Team Manager | View Players"
+                title: "Welcome to Song Manager"
                 ,players: result
             });
         });

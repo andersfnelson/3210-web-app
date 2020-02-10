@@ -3,7 +3,7 @@ const fs = require('fs');
 module.exports = {
     addPlayerPage: (req, res) => {
         res.render('add-player.ejs', {
-            title: 'Welcome to Soccer Team Manager | Add a new player'
+            title: 'Welcome to Song Database | Add a new song'
             ,message: ''
         });
     },
@@ -23,7 +23,7 @@ module.exports = {
         let fileExtension = uploadedFile.mimetype.split('/')[1];
         image_name = username + '.' + fileExtension;
 
-        let usernameQuery = "SELECT * FROM `players` WHERE user_name = '" + username + "'";
+        let usernameQuery = "SELECT * FROM `songs` WHERE songName = '" + username + "'";
 
         db.query(usernameQuery, (err, result) => {
             if (err) {
@@ -65,7 +65,7 @@ module.exports = {
     },
     editPlayerPage: (req, res) => {
         let playerId = req.params.id;
-        let query = "SELECT * FROM `players` WHERE id = '" + playerId + "' ";
+        let query = "SELECT * FROM `songs` WHERE songName = '" + playerId + "' ";
         db.query(query, (err, result) => {
             if (err) {
                 return res.status(500).send(err);
