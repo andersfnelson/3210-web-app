@@ -17,15 +17,15 @@
                         <tr>
                             <th scope="row"><%= player.songName %></th>
                             <td><%= player.genre %></td>
-                            <td><img src="/assets/img/<%= player.image %>" class="rounded-circle player-img" alt=""></td>
+                            <!-- <td><img src="/assets/img/<%= player.image %>" class="rounded-circle player-img" alt=""></td> -->
 
-                            <td><%= player.last_name %></td>
-                            <td><%= player.position %></td>
-                            <td><%= player.number %></td>
-                            <td>@<%= player.user_name %></td>
+                            <td><%= player.artist %></td>
+                            <td><%= player.album %></td>
+                            <td><%= player.year %></td>
+                            <!-- <td>@<%= player.user_name %></td> -->
                             <td>
                                 <a href="/edit/<%= player.songName %>" target="_blank" rel="noopener" class="btn btn-sm btn-success">Edit</a>
-                                <a href="/edit/<%= player.songName %>" target="_blank" rel="noopener" class="btn btn-sm btn-success">View Lyrics</a>
+                                <a href="/view/<%= player.songName %>" target="_blank" rel="noopener" class="btn btn-sm btn-success">View Lyrics</a>
                                 <a href="/delete/<%= player.songName %>" class="btn btn-sm btn-danger">Delete</a>
                             </td>
                         </tr>

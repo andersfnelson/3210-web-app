@@ -41,8 +41,10 @@ app.get('/', getHomePage);
 app.get('/add', addPlayerPage);
 app.get('/edit/:id', editPlayerPage);
 app.get('/delete/:id', deletePlayer);
+
 app.post('/add', addPlayer);
 app.post('/edit/:id', editPlayer);
+// app.get('/view/:id', viewLyrics);
 
 // set the app to listen on the port
 app.listen(port, () => {
